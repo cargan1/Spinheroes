@@ -1,0 +1,16 @@
+{
+  "name": "spinheroes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "build": "rollup --config",
+    "build:watch": "rollup --config --watch",
+    "build:tw": "npx tailwindcss -i ./src/css/main.css -o ./dist/style.min.css --watch --minify"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
