@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spinheroes</title>
+    <link href="
+    https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.8/build/css/intlTelInput.min.css
+    " rel="stylesheet">
     <link rel="stylesheet" href="dist/style.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="dist/bundle.js" defer></script>
+
 </head>
 
 <body>
@@ -20,7 +23,7 @@
             <span class="line3 h-1 w-9 m-1 bg-lightpurple block duration-300"></span>
         </div>
         <div class="logo w-32">
-            <img src="/assets/herospins-logo.png" alt="" srcset="" class="w-32 absolute -mt-5">
+            <img src="/assets/herospins-logo.png" alt="" srcset="" class="w-28 md:w-32 absolute -mt-5">
         </div>
         <div class="location-service flex gap-3 w-2/5 justify-end">
             <div class="buttons--container flex gap-4 md:gap-2 items-center">
@@ -38,19 +41,21 @@
     </nav>
     <main>
         <section
-            class="hero--section pt-20 pb-2 md:pt-28 md:pb-14  bg-[url('/assets/hero-desktop.jpg')] bg-cover w-full">
+            class="hero--section pt-16 pb-2 md:pt-28 md:pb-14  bg-[url('/assets/hero-desktop.jpg')] bg-cover w-full">
             <div class="container gap-6 md:gap-12 flex flex-col ">
                 <div class="hero--content max-w-2xl flex-col">
                     <h1 class="text-white font-light leading-none text-4xl md:text-5xl">Our top casino offers in <span
                             class="country text-lightpurple font-semibold">Germany</span></h1>
-                    <p class="text-grey leading-tight mt-4 font-light">Looking for the best and most trusted Casino’s in
+                    <p class="text-grey leading-tight text-sm md:text-base mt-4 font-light">Looking for the best and
+                        most trusted Casino’s in
                         Germany?
                         Look
                         no
                         further we have curated a updated list with all the best bonuses available in Germany right now.
                     </p>
                 </div>
-                <div class="usp--container flex flex-row flex-1 gap-4 md:gap-8 font-semibold  w-full overflow-x-scroll">
+                <div
+                    class="usp--container flex flex-row flex-1 gap-4 md:gap-8 font-semibold  pb-2 w-full overflow-x-scroll">
                     <div class="usp-item flex flex-row gap-1 md:gap-2 items-center">
                         <div class="icon">
                             <svg width="32" height="32" viewBox="0 0 24 24" fill="none"
@@ -191,8 +196,8 @@
         </section>
         <section class="listing--section pt-10 pb-20">
             <div class="container flex flex-col gap-14">
-                <div class="offer-list-item w-full bg-darkpurple rounded pt-8 pb-4 ">
-                    <div class="offer-item-labels absolute  text-xs uppercase flex flex-row -mt-12">
+                <div class="offer-list-item w-full bg-darkpurple rounded pt-6 pb-4 ">
+                    <div class="offer-item-labels absolute  text-xs uppercase flex flex-row -mt-10">
                         <div
                             class="offer-item--label bg-lightpurple text-[.6rem] md:text-[.7rem] uppercase ml-3.5 py-2 px-4 md:px-6 rounded-sm font-semibold">
                             Exclusive
@@ -207,39 +212,39 @@
                             class="offer-item-content--left flex flex-[1_1_50%] md:flex-row flex-col gap-2 lg:gap-0 justify-center md:justify-around items-center">
                             <div class="offer-item--number text-4xl font-semibold text-gray-400 hidden lg:block">1</div>
                             <div class="offer-item--logo text-center flex justify-center">
-                                <img src="assets/playojo.png" alt="" class="w-36 max-h-16 object-contain">
+                                <img src="assets/playojo.png" alt="" class="h-16 object-contain">
                             </div>
                             <div class="offer-item--info w-32 text-center hidden md:flex flex-col">
                                 <h3 class="offer-item--name font-semibold text-lg">PlayOjo</h3><a href="#"
                                     class="offer-item--link text-gray-400 text-[.6rem]">playojo.com</a>
                             </div>
-                            <div class="offer-item--ratings flex flex-row md:flex-col items-center gap-3">
-                                <div class="yellow-stars flex flex-row lg:gap-2 max-h-4 lg:max-h-6 ">
-                                    <svg class="w-6 lg:w-6" viewBox="0 0 26 24" fill="none"
+                            <div class="offer-item--ratings flex flex-col items-center gap-2">
+                                <div class="yellow-stars flex flex-row gap-1 lg:gap-2 max-h-4 lg:max-h-6 ">
+                                    <svg class="w-4 lg:w-6" viewBox="0 0 26 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M12.8467 0L16.2641 8.45022L25.3568 9.08908L18.3762 14.9505L20.5784 23.7955L12.8467 18.9678L5.11511 23.7955L7.31731 14.9505L0.336697 9.08908L9.42936 8.45022L12.8467 0Z"
                                             fill="#F2B519" />
                                     </svg>
-                                    <svg class="w-6 lg:w-6" viewBox="0 0 26 24" fill="none"
+                                    <svg class="w-4 lg:w-6" viewBox="0 0 26 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M12.8467 0L16.2641 8.45022L25.3568 9.08908L18.3762 14.9505L20.5784 23.7955L12.8467 18.9678L5.11511 23.7955L7.31731 14.9505L0.336697 9.08908L9.42936 8.45022L12.8467 0Z"
                                             fill="#F2B519" />
                                     </svg>
-                                    <svg class="w-6 lg:w-6" viewBox="0 0 26 24" fill="none"
+                                    <svg class="w-4 lg:w-6" viewBox="0 0 26 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M12.8467 0L16.2641 8.45022L25.3568 9.08908L18.3762 14.9505L20.5784 23.7955L12.8467 18.9678L5.11511 23.7955L7.31731 14.9505L0.336697 9.08908L9.42936 8.45022L12.8467 0Z"
                                             fill="#F2B519" />
                                     </svg>
-                                    <svg class="w-6 lg:w-6" viewBox="0 0 26 24" fill="none"
+                                    <svg class="w-4 lg:w-6" viewBox="0 0 26 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M12.8467 0L16.2641 8.45022L25.3568 9.08908L18.3762 14.9505L20.5784 23.7955L12.8467 18.9678L5.11511 23.7955L7.31731 14.9505L0.336697 9.08908L9.42936 8.45022L12.8467 0Z"
                                             fill="#F2B519" />
                                     </svg>
-                                    <svg class="w-6 lg:w-6" viewBox="0 0 26 24" fill="none"
+                                    <svg class="w-4 lg:w-6" viewBox="0 0 26 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M12.8467 0L16.2641 8.45022L25.3568 9.08908L18.3762 14.9505L20.5784 23.7955L12.8467 18.9678L5.11511 23.7955L7.31731 14.9505L0.336697 9.08908L9.42936 8.45022L12.8467 0Z"
@@ -255,9 +260,9 @@
                         </div>
                         <div
                             class="offer-item-content--right flex flex-[1_1_50%] md:flex-row flex-col justify-center md:justify-around items-center">
-                            <div class="offer-item--bonus flex px-4 lg:px-0 flex-[1_1_60%] justify-center">
+                            <div class="offer-item--bonus flex px-2 lg:px-0 flex-[1_1_60%] justify-center">
                                 <h4
-                                    class="text-white text-xl lg:text-2xl max-w-[250px] text-center font-semibold leading-tight">
+                                    class="text-white text-lg lg:text-2xl max-w-[250px] text-center font-semibold leading-tight">
                                     100%
                                     up
                                     to £20 &amp;
@@ -267,14 +272,14 @@
                                 <span class="text-gray-500 text-[.6rem] text-center uppercase mb-1">MIN DEPOSIT
                                     $5</span>
                                 <a href="#"
-                                    class="item-cta uppercase text-sm text-center font-bold rounded bg-lightpurple py-2 lg:py-3 px-9 lg:px-9">Join
+                                    class="item-cta uppercase text-sm text-center font-bold rounded bg-lightpurple py-1.5 lg:py-3 px-9 lg:px-9">Join
                                     today</a>
                             </div>
                         </div>
 
                     </div>
                     <div
-                        class="offer-item-disclaimer text-center text-[.5rem] md:text-[.6rem] text-gray-500 mt-4 px-4 lg:px-10">
+                        class="offer-item-disclaimer text-center text-[.4rem] md:text-[.6rem] text-gray-500 mt-2 px-4 lg:px-10">
                         Full
                         T&Cs
                         apply. New
@@ -282,8 +287,8 @@
                         contributions vary. £6 bonus has 3 day expiry to use on selected Evolution games.. Terms And
                         Conditions Apply</div>
                 </div>
-                <div class="offer-list-item w-full bg-darkpurple rounded pt-8 pb-4 ">
-                    <div class="offer-item-labels absolute  text-xs uppercase flex flex-row -mt-12">
+                <div class="offer-list-item w-full bg-darkpurple rounded pt-6 pb-4 ">
+                    <div class="offer-item-labels absolute  text-xs uppercase flex flex-row -mt-10">
                         <div
                             class="offer-item--label bg-lightpurple text-[.6rem] md:text-[.7rem] uppercase ml-3.5 py-2 px-4 md:px-6 rounded-sm font-semibold">
                             Exclusive
@@ -298,39 +303,39 @@
                             class="offer-item-content--left flex flex-[1_1_50%] md:flex-row flex-col gap-2 lg:gap-0 justify-center md:justify-around items-center">
                             <div class="offer-item--number text-4xl font-semibold text-gray-400 hidden lg:block">1</div>
                             <div class="offer-item--logo text-center flex justify-center">
-                                <img src="assets/LeoVegas.png" alt="" class="w-36 max-h-16 object-contain">
+                                <img src="assets/LeoVegas.png" alt="" class="h-16 object-contain">
                             </div>
                             <div class="offer-item--info w-32 text-center hidden md:flex flex-col">
                                 <h3 class="offer-item--name font-semibold text-lg">Leo Vegas</h3><a href="#"
                                     class="offer-item--link text-gray-400 text-[.6rem]">leovegas.com</a>
                             </div>
-                            <div class="offer-item--ratings flex flex-row md:flex-col items-center gap-3">
-                                <div class="yellow-stars flex flex-row lg:gap-2 max-h-4 lg:max-h-6 ">
-                                    <svg class="w-6 lg:w-6" viewBox="0 0 26 24" fill="none"
+                            <div class="offer-item--ratings flex flex-col items-center gap-2">
+                                <div class="yellow-stars flex flex-row gap-1 lg:gap-2 max-h-4 lg:max-h-6 ">
+                                    <svg class="w-4 lg:w-6" viewBox="0 0 26 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M12.8467 0L16.2641 8.45022L25.3568 9.08908L18.3762 14.9505L20.5784 23.7955L12.8467 18.9678L5.11511 23.7955L7.31731 14.9505L0.336697 9.08908L9.42936 8.45022L12.8467 0Z"
                                             fill="#F2B519" />
                                     </svg>
-                                    <svg class="w-6 lg:w-6" viewBox="0 0 26 24" fill="none"
+                                    <svg class="w-4 lg:w-6" viewBox="0 0 26 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M12.8467 0L16.2641 8.45022L25.3568 9.08908L18.3762 14.9505L20.5784 23.7955L12.8467 18.9678L5.11511 23.7955L7.31731 14.9505L0.336697 9.08908L9.42936 8.45022L12.8467 0Z"
                                             fill="#F2B519" />
                                     </svg>
-                                    <svg class="w-6 lg:w-6" viewBox="0 0 26 24" fill="none"
+                                    <svg class="w-4 lg:w-6" viewBox="0 0 26 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M12.8467 0L16.2641 8.45022L25.3568 9.08908L18.3762 14.9505L20.5784 23.7955L12.8467 18.9678L5.11511 23.7955L7.31731 14.9505L0.336697 9.08908L9.42936 8.45022L12.8467 0Z"
                                             fill="#F2B519" />
                                     </svg>
-                                    <svg class="w-6 lg:w-6" viewBox="0 0 26 24" fill="none"
+                                    <svg class="w-4 lg:w-6" viewBox="0 0 26 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M12.8467 0L16.2641 8.45022L25.3568 9.08908L18.3762 14.9505L20.5784 23.7955L12.8467 18.9678L5.11511 23.7955L7.31731 14.9505L0.336697 9.08908L9.42936 8.45022L12.8467 0Z"
                                             fill="#F2B519" />
                                     </svg>
-                                    <svg class="w-6 lg:w-6" viewBox="0 0 26 24" fill="none"
+                                    <svg class="w-4 lg:w-6" viewBox="0 0 26 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M12.8467 0L16.2641 8.45022L25.3568 9.08908L18.3762 14.9505L20.5784 23.7955L12.8467 18.9678L5.11511 23.7955L7.31731 14.9505L0.336697 9.08908L9.42936 8.45022L12.8467 0Z"
@@ -346,9 +351,9 @@
                         </div>
                         <div
                             class="offer-item-content--right flex flex-[1_1_50%] md:flex-row flex-col justify-center md:justify-around items-center">
-                            <div class="offer-item--bonus flex px-4 lg:px-0 flex-[1_1_60%] justify-center">
+                            <div class="offer-item--bonus flex px-2 lg:px-0 flex-[1_1_60%] justify-center">
                                 <h4
-                                    class="text-white text-xl lg:text-2xl max-w-[250px] text-center font-semibold leading-tight">
+                                    class="text-white text-lg lg:text-2xl max-w-[250px] text-center font-semibold leading-tight">
                                     100%
                                     up
                                     to £20 &amp;
@@ -358,14 +363,14 @@
                                 <span class="text-gray-500 text-[.6rem] text-center uppercase mb-1">MIN DEPOSIT
                                     $5</span>
                                 <a href="#"
-                                    class="item-cta uppercase text-sm text-center font-bold rounded bg-lightpurple py-2 lg:py-3 px-9 lg:px-9">Join
+                                    class="item-cta uppercase text-sm text-center font-bold rounded bg-lightpurple py-1.5 lg:py-3 px-9 lg:px-9">Join
                                     today</a>
                             </div>
                         </div>
 
                     </div>
                     <div
-                        class="offer-item-disclaimer text-center text-[.5rem] md:text-[.6rem] text-gray-500 mt-4 px-4 lg:px-10">
+                        class="offer-item-disclaimer text-center text-[.4rem] md:text-[.6rem] text-gray-500 mt-2 px-4 lg:px-10">
                         Full
                         T&Cs
                         apply. New
@@ -373,12 +378,102 @@
                         contributions vary. £6 bonus has 3 day expiry to use on selected Evolution games.. Terms And
                         Conditions Apply</div>
                 </div>
+                <div class="offer-list-item w-full bg-darkpurple rounded pt-6 pb-4 ">
+                    <div class="offer-item-labels absolute  text-xs uppercase flex flex-row -mt-10">
+                        <div
+                            class="offer-item--label bg-lightpurple text-[.6rem] md:text-[.7rem] uppercase ml-3.5 py-2 px-4 md:px-6 rounded-sm font-semibold">
+                            Exclusive
+                            offer
+                        </div>
+                        <div
+                            class="offer-item--label bg-red-600 text-[.6rem] md:text-[.7rem] uppercase ml-3.5 py-2 px-4 md:px-6rounded-sm font-semibold">
+                            Most popular</div>
+                    </div>
+                    <div class="offer-item-content flex justify-between items-center px-2 md:px-6 flex-nowrap flex-row">
+                        <div
+                            class="offer-item-content--left flex flex-[1_1_50%] md:flex-row flex-col gap-2 lg:gap-0 justify-center md:justify-around items-center">
+                            <div class="offer-item--number text-4xl font-semibold text-gray-400 hidden lg:block">1</div>
+                            <div class="offer-item--logo text-center flex justify-center">
+                                <img src="assets/playojo.png" alt="" class="h-16 object-contain">
+                            </div>
+                            <div class="offer-item--info w-32 text-center hidden md:flex flex-col">
+                                <h3 class="offer-item--name font-semibold text-lg">PlayOjo</h3><a href="#"
+                                    class="offer-item--link text-gray-400 text-[.6rem]">playojo.com</a>
+                            </div>
+                            <div class="offer-item--ratings flex flex-col items-center gap-2">
+                                <div class="yellow-stars flex flex-row gap-1 lg:gap-2 max-h-4 lg:max-h-6 ">
+                                    <svg class="w-4 lg:w-6" viewBox="0 0 26 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.8467 0L16.2641 8.45022L25.3568 9.08908L18.3762 14.9505L20.5784 23.7955L12.8467 18.9678L5.11511 23.7955L7.31731 14.9505L0.336697 9.08908L9.42936 8.45022L12.8467 0Z"
+                                            fill="#F2B519" />
+                                    </svg>
+                                    <svg class="w-4 lg:w-6" viewBox="0 0 26 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.8467 0L16.2641 8.45022L25.3568 9.08908L18.3762 14.9505L20.5784 23.7955L12.8467 18.9678L5.11511 23.7955L7.31731 14.9505L0.336697 9.08908L9.42936 8.45022L12.8467 0Z"
+                                            fill="#F2B519" />
+                                    </svg>
+                                    <svg class="w-4 lg:w-6" viewBox="0 0 26 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.8467 0L16.2641 8.45022L25.3568 9.08908L18.3762 14.9505L20.5784 23.7955L12.8467 18.9678L5.11511 23.7955L7.31731 14.9505L0.336697 9.08908L9.42936 8.45022L12.8467 0Z"
+                                            fill="#F2B519" />
+                                    </svg>
+                                    <svg class="w-4 lg:w-6" viewBox="0 0 26 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.8467 0L16.2641 8.45022L25.3568 9.08908L18.3762 14.9505L20.5784 23.7955L12.8467 18.9678L5.11511 23.7955L7.31731 14.9505L0.336697 9.08908L9.42936 8.45022L12.8467 0Z"
+                                            fill="#F2B519" />
+                                    </svg>
+                                    <svg class="w-4 lg:w-6" viewBox="0 0 26 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.8467 0L16.2641 8.45022L25.3568 9.08908L18.3762 14.9505L20.5784 23.7955L12.8467 18.9678L5.11511 23.7955L7.31731 14.9505L0.336697 9.08908L9.42936 8.45022L12.8467 0Z"
+                                            fill="#F2B519" />
+                                    </svg>
+                                </div>
+                                <p
+                                    class="star-ratings flex-[1_1_50%] text-xs font-semibold text-center flex w-full justify-center lg:mt-2 whitespace-nowrap">
+                                    from
+                                    921
+                                    votes</p>
+                            </div>
+                        </div>
+                        <div
+                            class="offer-item-content--right flex flex-[1_1_50%] md:flex-row flex-col justify-center md:justify-around items-center">
+                            <div class="offer-item--bonus flex px-2 lg:px-0 flex-[1_1_60%] justify-center">
+                                <h4
+                                    class="text-white text-lg lg:text-2xl max-w-[250px] text-center font-semibold leading-tight">
+                                    100%
+                                    up
+                                    to £20 &amp;
+                                    20 free spins</h4>
+                            </div>
+                            <div class="offer-item-cta flex flex-col gap-2 lg:gap-0 flex-[1_1_40%]">
+                                <span class="text-gray-500 text-[.6rem] text-center uppercase mb-1">MIN DEPOSIT
+                                    $5</span>
+                                <a href="#"
+                                    class="item-cta uppercase text-sm text-center font-bold rounded bg-lightpurple py-1.5 lg:py-3 px-9 lg:px-9">Join
+                                    today</a>
+                            </div>
+                        </div>
 
+                    </div>
+                    <div
+                        class="offer-item-disclaimer text-center text-[.4rem] md:text-[.6rem] text-gray-500 mt-2 px-4 lg:px-10">
+                        Full
+                        T&Cs
+                        apply. New
+                        players only. 7 days to claim offer with a further 7 days to wager on Live casino. Wagering
+                        contributions vary. £6 bonus has 3 day expiry to use on selected Evolution games.. Terms And
+                        Conditions Apply</div>
+                </div>
             </div>
         </section>
     </main>
     <footer class="w-full bg-darkpurple pt-16 pb-10">
-        <div class="logo-list flex flex-row justify-center items-center gap-4">
+        <div class="logo-list flex flex-row flex-wrap justify-center items-center gap-4">
             <img src="/assets/footer-logos/gamecare.png" alt="" class="max-h-10 md:max-h-16 object-contain">
             <img src="/assets/footer-logos/gamble_aware.png" alt="" class="max-h-10 md:max-h-16 object-contain">
             <img src="/assets/footer-logos/18plus.png" alt="" class="max-h-10 md:max-h-16 object-contain">
@@ -392,6 +487,76 @@
             <div class="footer-copyright">© 2023 All rights reserved</div>
         </div>
     </footer>
+    <div class="popup-section absolute w-full left-0 top-0 h-full flex p-5 md:p-0">
+        <div class="popup-overlay bg-violet absolute w-full left-0 top-0 h-full opacity-80"></div>
+        <div class="popup-container bg-poppurple rounded-3xl w-full max-w-xl relative m-auto">
+            <div class="popup-content px-6 md:px-20 pb-6 md:pb-10">
+                <img src="assets/popup-hero.jpg" alt="" class="w-full rounded-b-3xl">
+                <h3 class="popup-title text-2xl md:text-3xl font-light mt-8 md:mt-10 mb-5">Register to get access to the
+                    <span class="font-semibold italic text-lightpurple">best casino offers</span>
+                </h3>
+                <div class="form-container text-darkpurple font-semibold text-sm md:text-base">
+                    <form id="login" onsubmit="">
+                        <div class="mb-4">
+                            <label for="name" class="hidden"></label>
+                            <input
+                                class="py-2.5 md:py-3 px-4 w-full appearance-none bg-formbg border-formbg border-2 font-normal rounded focus:border-lightpurple focus:outline-none leading-tight text-gray-300 focus:text-white"
+                                type="text" id="name" placeholder="Name">
+                        </div>
+                        <div class="mb-4">
+                            <label for="Email" class="hidden"></label>
+                            <input
+                                class="py-2.5 md:py-3 px-4 w-full appearance-none bg-formbg border-formbg border-2 font-normal rounded focus:border-lightpurple focus:outline-none leading-tight text-gray-300"
+                                type="email" id="email" placeholder="Email">
+                        </div>
+                        <div class="mb-6 w-full">
+                            <label for="phone" class="hidden"></label>
+                            <input
+                                class="py-2.5 md:py-3.px-4 w-full appearance-none bg-formbg border-formbg border-2 font-normal rounded focus:border-lightpurple focus:outline-none leading-tight text-gray-300"
+                                type="phone" id="phone" placeholder="(555) 555-1234 (optional)">
+                        </div>
+                        <div class="w-full flex justify-center">
+                            <input type="submit"
+                                class="bg-lightpurple w-full py-3 px-14  text-lg uppercase text-white rounded"
+                                value="Join today" />
+                        </div>
+                        <div
+                            class="flex flex-col gap-2 text-gray-300 font-normal text-[.6rem] w-full mt-4 px-4 md:px-10 leading-tight">
+                            <div class="flex gap-2 items-center">
+                                <input type="checkbox" id="age" name="allowed" value="1" class="" required>
+                                <label for="age">I confirm that i am over 18 years old</label>
+                            </div>
+
+                            <div class="flex gap-2 items-center">
+                                <input type="checkbox" id="subscribe" name="allowed" value="1" class="" checked>
+                                <label for="subscribe">Yes please, i wan't to subscribe to the newsletter</label>
+                            </div>
+
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="popup-close-container absolute top-4 right-4 md:top-10 md:right-10">
+            <div class="pop-close-icon w-5 md:w-6 relative cursor-pointer">
+                <span class="h-1 w-full m-1 bg-white block duration-300 rotate-45 absolute"></span>
+                <span class="h-1 w-full m-1 bg-white block duration-300 -rotate-45 absolute"></span>
+            </div>
+        </div>
+    </div>
+    <script src="dist/bundle.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="
+    https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.8/build/js/intlTelInput.min.js
+    "></script>
+    <script>
+        var input = document.querySelector("#phone");
+        window.intlTelInput(input, {
+            separateDialCode: true,
+            utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/utils.js",
+        });
+    </script>
 </body>
 
 </html>
