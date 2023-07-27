@@ -8,4 +8,11 @@ hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("toggle");
 });
 
+const popCta = document.querySelector("#popup-cta");
+const popup = document.querySelector(".popup-section");
+popCta.addEventListener("click", () => {
+  //Hamburger Animation
+  popup.classList.toggle("hidden");
+});
+
 // phoneInput();
