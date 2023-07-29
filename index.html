@@ -16,37 +16,61 @@
 </head>
 
 <body>
-    <nav class="w-full bg-darkpurple py-5 flex px-6 md:px-10 justify-between items-center max-h-20">
-        <div class="hamburger transition-all duration-700 cursor-pointer w-2/5">
-            <span class="line1 h-1 w-9 m-1 bg-lightpurple block duration-300"></span>
-            <span class="line2 h-1 w-9 m-1 bg-lightpurple block duration-300"></span>
-            <span class="line3 h-1 w-9 m-1 bg-lightpurple block duration-300"></span>
-        </div>
-        <div class="logo w-32">
-            <img src="/Spinheroes/assets/herospins-logo.png" alt="" srcset="" class="w-28 md:w-32 absolute -mt-5">
-        </div>
-        <div class="location-service flex gap-3 w-2/5 justify-end">
-            <div class="buttons--container flex gap-4 md:gap-2 items-center">
-                <a href="#"
-                    class="location-cta bg-violet text-white text-sm rounded-full py-2 px-6 font-semibold hidden md:block">Change
-                    location</a>
-                <div class="flag-mobile block md:hidden">
-                    <img src="assets/danmark-flag.png" alt="" class="w-8">
-                </div>
-                <span
-                    class="info font-bold border-solid border-lightpurple border-2 rounded-full text-gray-200 w-5 h-5 p-0 text-center text-xs m-auto">i</span>
+    <header class="w-full py-3 flex px-6 md:px-10 justify-between items-center fixed bg-darkpurple z-10">
+        <div class="content w-full flex justify-between items-center relative">
+            <div class="hamburger transition-all duration-700 cursor-pointer w-2/5 z-50">
+                <span class="line1 h-1 w-9 m-1 bg-lightpurple block duration-300"></span>
+                <span class="line2 h-1 w-9 m-1 bg-lightpurple block duration-300"></span>
+                <span class="line3 h-1 w-9 m-1 bg-lightpurple block duration-300"></span>
             </div>
+            <div class="logo w-32 flex justify-center">
+                <img src="/Spinheroes/assets/herospins-logo.png" alt="" srcset="" class=" object-contain h-16">
+            </div>
+            <div class="location-service flex gap-3 w-2/5 justify-end">
+                <div class="buttons--container flex gap-4 md:gap-2 items-center">
+                    <a href="#"
+                        class="location-cta bg-violet text-white text-sm rounded-full py-2 px-6 font-semibold hidden md:block">Change
+                        location</a>
+                    <div class="flag-mobile block md:hidden">
+                        <img src="assets/danmark-flag.png" alt="" class="w-8">
+                    </div>
+                    <div class="info-icon flex">
+                        <span
+                            class="info font-bold border-solid border-lightpurple border-2 rounded-full text-gray-200 w-5 h-5 p-0 text-center text-xs m-auto">i</span>
+                        <div
+                            class="tooltip bg-lightpurple text-white p2 rounded z-40 absolute top-12 w-32 hidden right-0 p-4">
+                            <p class="text-[.6rem] font-medium leading-tight">Click and change to the correct country*
+                            </p>
+                        </div>
+                    </div>
 
+                </div>
+
+            </div>
+            <div
+                class="mobile-drawer flex flex-col items-center sw-10/12 md:w-2/5 fixed left-0 top-0 overflow-y-auto z-20 bg-poppurple px-12 py-20 hidden h-full shadow-2xl shadow-black">
+                <nav class="block w-full">
+                    <ul class="list-none w-full block text-white font-medium text-xl">
+                        <li class="py-2">Menu item</li>
+                        <li class="py-2">Menu item</li>
+                        <li class="py-2">Menu item</li>
+                        <li class="py-2">Menu item</li>
+                        <li class="py-2">Menu item</li>
+                        <li class="py-2">Menu item</li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-    </nav>
+    </header>
     <main>
         <section
-            class="hero--section pt-16 pb-2 md:pt-28 md:pb-14  bg-[url('/Spinheroes/assets/hero-desktop.jpg')] bg-cover w-full">
+            class="hero--section pt-28 pb-2 md:pt-36 md:pb-8  bg-[url('/Spinheroes/assets/hero-desktop.jpg')] bg-cover w-full">
             <div class="container gap-6 md:gap-12 flex flex-col ">
                 <div class="hero--content max-w-2xl flex-col">
                     <h1 class="text-white font-light leading-none text-4xl md:text-5xl">Our top casino offers in <span
                             class="country text-lightpurple font-semibold">Germany</span></h1>
-                    <p class="text-grey leading-tight text-sm md:text-base mt-4 font-light">Looking for the best and
+                    <p class="text-grey leading-tight hidden md:block text-sm md:text-base mt-4 font-light">Looking for
+                        the best and
                         most trusted Casino’s in
                         Germany?
                         Look
@@ -195,23 +219,24 @@
             </div>
         </section>
         <section class="listing--section pt-10 pb-20">
-            <div class="container flex flex-col gap-14">
-                <div class="offer-list-item w-full bg-darkpurple rounded pt-6 pb-4 ">
-                    <div class="offer-item-labels absolute  text-xs uppercase flex flex-row -mt-10">
+            <div class="container flex flex-col gap-8">
+                <div class="offer-list-item w-full bg-darkpurple rounded pt-6 pb-4 relative">
+                    <div class="offer-item-labels absolute z-1 text-xs uppercase flex flex-row top-0 -mt-2">
                         <div
-                            class="offer-item--label bg-lightpurple text-[.6rem] md:text-[.7rem] uppercase ml-3.5 py-2 px-4 md:px-6 rounded-sm font-semibold">
-                            Exclusive
-                            offer
+                            class="offer-item--label bg-lightpurple text-[.5rem] md:text-[.7rem] uppercase ml-3.5 py-1 px-3 md:px-6 rounded-sm font-semibold">
+                            <span>Exclusive
+                                offer</span>
                         </div>
                         <div
-                            class="offer-item--label bg-red-600 text-[.6rem] md:text-[.7rem] uppercase ml-3.5 py-2 px-4 md:px-6rounded-sm font-semibold">
-                            Most popular</div>
+                            class="offer-item--label bg-red-600 text-[.5rem] md:text-[.7rem] uppercase ml-3.5 py-1 px-3 md:px-6rounded-sm font-semibold">
+                            <span>Most popular</span>
+                        </div>
                     </div>
                     <div class="offer-item-content flex justify-between items-center px-2 md:px-6 flex-nowrap flex-row">
                         <div
                             class="offer-item-content--left flex flex-[1_1_50%] md:flex-row flex-col gap-2 lg:gap-0 justify-center md:justify-around items-center">
                             <div class="offer-item--number text-4xl font-semibold text-gray-400 hidden lg:block">1</div>
-                            <div class="offer-item--logo text-center flex justify-center">
+                            <div class="offer-item--logo w-28 text-center flex justify-center">
                                 <img src="assets/playojo.png" alt="" class="h-16 object-contain">
                             </div>
                             <div class="offer-item--info w-32 text-center hidden md:flex flex-col">
@@ -262,10 +287,10 @@
                             class="offer-item-content--right flex flex-[1_1_50%] md:flex-row flex-col justify-center md:justify-around items-center">
                             <div class="offer-item--bonus flex px-2 lg:px-0 flex-[1_1_60%] justify-center">
                                 <h4
-                                    class="text-white text-lg lg:text-2xl max-w-[250px] text-center font-semibold leading-tight">
+                                    class="text-white text-md lg:text-xl max-w-[250px] text-center font-semibold leading-tight">
                                     100%
                                     up
-                                    to £20 &amp;
+                                    to £20 + &amp;
                                     20 free spins</h4>
                             </div>
                             <div class="offer-item-cta flex flex-col gap-2 lg:gap-0 flex-[1_1_40%]">
@@ -287,22 +312,23 @@
                         contributions vary. £6 bonus has 3 day expiry to use on selected Evolution games.. Terms And
                         Conditions Apply</div>
                 </div>
-                <div class="offer-list-item w-full bg-darkpurple rounded pt-6 pb-4 ">
-                    <div class="offer-item-labels absolute  text-xs uppercase flex flex-row -mt-10">
+                <div class="offer-list-item w-full bg-darkpurple rounded pt-4 pb-4 relative">
+                    <div class="offer-item-labels absolute z-1 text-xs uppercase flex flex-row top-0 -mt-2">
                         <div
-                            class="offer-item--label bg-lightpurple text-[.6rem] md:text-[.7rem] uppercase ml-3.5 py-2 px-4 md:px-6 rounded-sm font-semibold">
-                            Exclusive
-                            offer
+                            class="offer-item--label bg-lightpurple text-[.5rem] md:text-[.7rem] uppercase ml-3.5 py-1 px-3 md:px-6 rounded-sm font-semibold">
+                            <span>Exclusive
+                                offer</span>
                         </div>
                         <div
-                            class="offer-item--label bg-red-600 text-[.6rem] md:text-[.7rem] uppercase ml-3.5 py-2 px-4 md:px-6rounded-sm font-semibold">
-                            Most popular</div>
+                            class="offer-item--label bg-yellow-600 text-[.5rem] md:text-[.7rem] uppercase ml-3.5 py-1 px-3 md:px-6rounded-sm font-semibold">
+                            <span>Top choice</span>
+                        </div>
                     </div>
                     <div class="offer-item-content flex justify-between items-center px-2 md:px-6 flex-nowrap flex-row">
                         <div
                             class="offer-item-content--left flex flex-[1_1_50%] md:flex-row flex-col gap-2 lg:gap-0 justify-center md:justify-around items-center">
                             <div class="offer-item--number text-4xl font-semibold text-gray-400 hidden lg:block">1</div>
-                            <div class="offer-item--logo text-center flex justify-center">
+                            <div class="offer-item--logo w-32 text-center flex justify-center">
                                 <img src="assets/LeoVegas.png" alt="" class="h-16 object-contain">
                             </div>
                             <div class="offer-item--info w-32 text-center hidden md:flex flex-col">
@@ -353,10 +379,10 @@
                             class="offer-item-content--right flex flex-[1_1_50%] md:flex-row flex-col justify-center md:justify-around items-center">
                             <div class="offer-item--bonus flex px-2 lg:px-0 flex-[1_1_60%] justify-center">
                                 <h4
-                                    class="text-white text-lg lg:text-2xl max-w-[250px] text-center font-semibold leading-tight">
+                                    class="text-white text-md lg:text-xl max-w-[250px] text-center font-semibold leading-tight">
                                     100%
                                     up
-                                    to £20 &amp;
+                                    to £20 +&amp;
                                     20 free spins</h4>
                             </div>
                             <div class="offer-item-cta flex flex-col gap-2 lg:gap-0 flex-[1_1_40%]">
@@ -378,22 +404,23 @@
                         contributions vary. £6 bonus has 3 day expiry to use on selected Evolution games.. Terms And
                         Conditions Apply</div>
                 </div>
-                <div class="offer-list-item w-full bg-darkpurple rounded pt-6 pb-4 ">
-                    <div class="offer-item-labels absolute  text-xs uppercase flex flex-row -mt-10">
+                <div class="offer-list-item w-full bg-darkpurple rounded pt-6 pb-4 relative">
+                    <div class="offer-item-labels absolute z-1 text-xs uppercase flex flex-row top-0 -mt-2">
                         <div
-                            class="offer-item--label bg-lightpurple text-[.6rem] md:text-[.7rem] uppercase ml-3.5 py-2 px-4 md:px-6 rounded-sm font-semibold">
-                            Exclusive
-                            offer
+                            class="offer-item--label bg-lightpurple text-[.5rem] md:text-[.7rem] uppercase ml-3.5 py-1 px-3 md:px-6 rounded-sm font-semibold">
+                            <span>Exclusive
+                                offer</span>
                         </div>
                         <div
-                            class="offer-item--label bg-red-600 text-[.6rem] md:text-[.7rem] uppercase ml-3.5 py-2 px-4 md:px-6rounded-sm font-semibold">
-                            Most popular</div>
+                            class="offer-item--label bg-red-600 text-[.5rem] md:text-[.7rem] uppercase ml-3.5 py-1 px-3 md:px-6rounded-sm font-semibold">
+                            <span>Most popular</span>
+                        </div>
                     </div>
                     <div class="offer-item-content flex justify-between items-center px-2 md:px-6 flex-nowrap flex-row">
                         <div
                             class="offer-item-content--left flex flex-[1_1_50%] md:flex-row flex-col gap-2 lg:gap-0 justify-center md:justify-around items-center">
                             <div class="offer-item--number text-4xl font-semibold text-gray-400 hidden lg:block">1</div>
-                            <div class="offer-item--logo text-center flex justify-center">
+                            <div class="offer-item--logo w-28 text-center flex justify-center">
                                 <img src="assets/playojo.png" alt="" class="h-16 object-contain">
                             </div>
                             <div class="offer-item--info w-32 text-center hidden md:flex flex-col">
@@ -444,10 +471,10 @@
                             class="offer-item-content--right flex flex-[1_1_50%] md:flex-row flex-col justify-center md:justify-around items-center">
                             <div class="offer-item--bonus flex px-2 lg:px-0 flex-[1_1_60%] justify-center">
                                 <h4
-                                    class="text-white text-lg lg:text-2xl max-w-[250px] text-center font-semibold leading-tight">
+                                    class="text-white text-md lg:text-xl max-w-[250px] text-center font-semibold leading-tight">
                                     100%
                                     up
-                                    to £20 &amp;
+                                    to £20 + &amp;
                                     20 free spins</h4>
                             </div>
                             <div class="offer-item-cta flex flex-col gap-2 lg:gap-0 flex-[1_1_40%]">
@@ -472,21 +499,29 @@
             </div>
         </section>
     </main>
-    <footer class="w-full bg-darkpurple pt-16 pb-10">
+    <footer class="w-full bg-darkpurple pt-10 pb-10">
         <div class="logo-list flex flex-row flex-wrap justify-center items-center gap-4">
             <img src="/Spinheroes/assets/footer-logos/gamecare.png" alt="" class="max-h-10 md:max-h-16 object-contain">
             <img src="/Spinheroes/assets/footer-logos/gamble_aware.png" alt=""
                 class="max-h-10 md:max-h-16 object-contain">
             <img src="/Spinheroes/assets/footer-logos/18plus.png" alt="" class="max-h-10 md:max-h-16 object-contain">
             <img src="/Spinheroes/assets/footer-logos/gamble-commision.png" alt=""
-                class="max-h-10 md:max-h-16object-contain">
+                class="max-h-10 md:max-h-16 object-contain">
         </div>
-        <div class="info-container m-auto text-xs text-center mt-4">
+        <div class="info-container m-auto text-xs text-center mt-10">
+            <div
+                class="offer-item-disclaimer text-center leading-tight text-[.4rem] md:text-[.6rem] text-gray-500 my-4 px-4 lg:px-10">
+                Full
+                T&Cs
+                apply. New
+                players only. 7 days to claim offer with a further 7 days to wager on Live casino. Wagering
+                contributions vary. £6 bonus has 3 day expiry to use on selected Evolution games.. Terms And
+                Conditions Apply</div>
             <div class="footer-links flex gap-4 font-semibold justify-center">
                 <a href="#" class="footer-item--links">Privacy Policy</a>
                 <a href="#" class="footer-item--links">Terms & conditions</a>
             </div>
-            <div class="footer-copyright">© 2023 All rights reserved</div>
+            <div class="footer-copyright mt-2">© 2023 All rights reserved</div>
         </div>
     </footer>
     <div class="popup-section absolute w-full left-0 top-0 h-full flex p-5 md:p-0 hidden">

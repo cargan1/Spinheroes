@@ -1,9 +1,11 @@
-// import phoneInput from "./phoneInput.js";
-
 const hamburger = document.querySelector(".hamburger");
+const drawer = document.querySelector(".mobile-drawer");
+
 hamburger.addEventListener("click", () => {
   //Hamburger Animation
   hamburger.classList.toggle("toggle");
+  drawer.classList.toggle("hidden");
+  document.body.classList.toggle("overflow-hidden");
 });
 
 const popCta = document.querySelector("#popup-cta");
@@ -13,4 +15,8 @@ popCta.addEventListener("click", () => {
   popup.classList.toggle("hidden");
 });
 
-// phoneInput();
+const infoIcon = document.querySelector(".info-icon");
+const tooltip = document.querySelector(".tooltip");
+infoIcon.addEventListener("click", () => {
+  tooltip.classList.toggle("hidden");
+});
