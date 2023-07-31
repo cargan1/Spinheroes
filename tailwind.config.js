@@ -10,6 +10,7 @@ module.exports = {
         grey: "#f9f9f9",
         poppurple: "#1E1D4B",
         formbg: "#2F2E68",
+        brightgreen: "#48D473",
       },
       fontFamily: {
         inter: "'Inter', sans-serif",
