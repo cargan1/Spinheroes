@@ -10,6 +10,13 @@ hamburger.addEventListener("click", () => {
   document.body.classList.toggle("overflow-hidden");
 });
 
+const flagCta = document.querySelector(".flag-mobile");
+const flagDropdown = document.querySelector(".location-dropdown");
+flagCta.addEventListener("click", () => {
+  //Hamburger Animation
+  flagDropdown.classList.toggle("hidden");
+});
+
 const popCta = document.querySelector("#popup-cta");
 const popup = document.querySelector(".popup-section");
 popCta.addEventListener("click", () => {
@@ -47,128 +54,44 @@ function randomIntFromInterval(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-// let stars = document.querySelectorAll('input[type="radio"]');
+$(".star-icon").each(function () {
+  let numberCorrect = parseInt(
+    $(this)
+      .closest(".rating-container")
+      .siblings(".votes")
+      .find(".voteAmount")
+      .text()
+  );
+  let newVote = (numberCorrect += 1);
+  $(this)
+    .hover(
+      function () {
+        $(this).prevAll().addBack().css("color", "#ffc300");
+      },
+      function () {
+        if (!$(this).parent().attr("data-rating")) {
+          $(this).prevAll().addBack().css("color", "#49487b");
+        } else {
+          $(this)
+            .siblings()
+            .addBack()
+            .each(function (index) {
+              index + 1 <= $(this).parent().attr("data-rating")
+                ? $(this).css("color", "#ffc300")
+                : $(this).css("color", "#49487b");
+            });
+        }
+      }
+    )
+    .click(function () {
+      $(this)
+        .parent()
+        .attr("data-rating", $(this).prevAll().length + 1);
 
-// stars.forEach((el) => {
-//   el.addEventListener(
-//     "input",
-//     function () {
-//       let currentNumb =
-//         el.parentElement.nextSibling.nextSibling.firstChild.nextSibling;
-//       let getNumber = Number(currentNumb.innerText);
-//       currentNumb.innerText = getNumber += 1;
-//     },
-//     { once: true }
-//   );
-// });
-
-// $(".rating .user-stars .star")
-//   .hover(function () {
-//     $(this).addClass("fas to_rate");
-//     $(this)
-//       .parent()
-//       .find(".star:lt(" + $(this).index() + ")")
-//       .addClass("fas to_rate");
-//     $(this)
-//       .parent()
-//       .find(".star:gt(" + $(this).index() + ")")
-//       .addClass("no_to_rate");
-//   })
-//   .mouseout(function () {
-//     $(this).parent().find(".star").removeClass("to_rate");
-//     $(this)
-//       .parent()
-//       .find(".star:not(.rated)")
-//       .removeClass("fas")
-//       .addClass("far");
-//     $(this)
-//       .parent()
-//       .find(".star:gt(" + $(this).index() + ")")
-//       .removeClass("no_to_rate");
-//   })
-//   .click(function () {
-//     var index = $(this).index() + 1;
-//     var rating = $(this).closest(".rating");
-//     var classList = $(rating).attr("class");
-//     var classArray = classList.split(/\s+/);
-//     var current_tt_class;
-//     $(classArray).each(function (index, item) {
-//       if (item.substr(0, 2) === "tt") {
-//         current_tt_class = item;
-//       }
-//     });
-
-//     $(".ops .rating")
-//       .removeClass(current_tt_class)
-//       .addClass("tt" + index);
-//     $(this).removeClass("to_rate").addClass("fas rated");
-//     $(this)
-//       .parent()
-//       .find(".star:lt(" + $(this).index() + ")")
-//       .removeClass("far to_rate")
-//       .addClass("fas rated");
-//     $(this)
-//       .parent()
-//       .find(".star:gt(" + $(this).index() + ")")
-//       .removeClass("no_to_rate")
-//       .removeClass("fas rated")
-//       .addClass("far");
-
-//     let numberThings = parseInt(
-//       $(this).closest(".ops").siblings(".votes").find(".voteAmount").text()
-//     );
-//     let newVote = (numberThings += 1);
-//     $(this)
-//       .closest(".ops")
-//       .siblings(".votes")
-//       .find(".voteAmount")
-//       .text(newVote)
-//       .one();
-
-//     //Save your rate
-//     //refresh public rate
-//   });
-
-$(document).ready(function () {
-  $(".star-icon").each(function () {
-    let numberCorrect = parseInt(
       $(this)
         .closest(".rating-container")
         .siblings(".votes")
         .find(".voteAmount")
-        .text()
-    );
-    let newVote = (numberCorrect += 1);
-    $(this)
-      .hover(
-        function () {
-          $(this).prevAll().addBack().css("color", "#ffc300");
-        },
-        function () {
-          if (!$(this).parent().attr("data-rating")) {
-            $(this).prevAll().addBack().css("color", "#49487b");
-          } else {
-            $(this)
-              .siblings()
-              .addBack()
-              .each(function (index) {
-                index + 1 <= $(this).parent().attr("data-rating")
-                  ? $(this).css("color", "#ffc300")
-                  : $(this).css("color", "#49487b");
-              });
-          }
-        }
-      )
-      .click(function () {
-        $(this)
-          .parent()
-          .attr("data-rating", $(this).prevAll().length + 1);
-
-        $(this)
-          .closest(".rating-container")
-          .siblings(".votes")
-          .find(".voteAmount")
-          .text(newVote);
-      });
-  });
+        .text(newVote);
+    });
 });
