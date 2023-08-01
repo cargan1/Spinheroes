@@ -6,7 +6,7 @@ const drawer = document.querySelector(".mobile-drawer");
 hamburger.addEventListener("click", () => {
   //Hamburger Animation
   hamburger.classList.toggle("toggle");
-  drawer.classList.toggle("hidden");
+  drawer.classList.toggle("open");
   document.body.classList.toggle("overflow-hidden");
 });
 

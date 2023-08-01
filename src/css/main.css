@@ -37,6 +37,12 @@
     transform: rotate(45deg) translate(-4px,-5px);
 }
 
+
+.mobile-drawer.open {
+  transition: all .5s ease-in-out;
+  left:0;
+}
+
 /* Phone input */
 
 .intl-tel-input,
@@ -137,14 +143,14 @@
 .ops .rating.tooltip.tt2:before { content: 'Your vote: 2/5'; left: 20px;}
 .ops .rating.tooltip.tt2:after { top: -7px; left: 30px;}
 
-.ops .rating.tooltip.tt3:before { content: 'Your vote: 3/5'; left: 50px;}
-.ops .rating.tooltip.tt3:after { top: -7px; left: 60px;}
+.ops .rating.tooltip.tt3:before { content: 'Your vote: 3/5'; left: 45px;}
+.ops .rating.tooltip.tt3:after { top: -7px; left: 55px;}
 
-.ops .rating.tooltip.tt4:before { content: 'Your vote: 4/5'; left: 76px;}
-.ops .rating.tooltip.tt4:after { top: -7px; left: 86px;}
+.ops .rating.tooltip.tt4:before { content: 'Your vote: 4/5'; left: 68px;}
+.ops .rating.tooltip.tt4:after { top: -7px; left: 78px;}
 
-.ops .rating.tooltip.tt5:before { content: 'Your vote: 5/5'; left: 100px;}
-.ops .rating.tooltip.tt5:after { top: -7px; left: 110px;}
+.ops .rating.tooltip.tt5:before { content: 'Your vote: 5/5'; left: 92px;}
+.ops .rating.tooltip.tt5:after { top: -7px; left: 102px;}
 
 
 /*  ----------------------  */
