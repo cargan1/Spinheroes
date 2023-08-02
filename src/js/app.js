@@ -17,9 +17,15 @@ flagCta.addEventListener("click", () => {
 
 const popCta = document.querySelector("#popup-cta");
 const popup = document.querySelector(".popup-section");
+const popClose = document.querySelector(".pop-close-icon");
+
 popCta.addEventListener("click", () => {
   //Hamburger Animation
   popup.classList.toggle("hidden");
+});
+
+popClose.addEventListener("click", () => {
+  popup.classList.add("hidden");
 });
 
 let scrollpos = window.scrollY;
