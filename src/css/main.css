@@ -85,9 +85,8 @@
   color: #000;
 }
 
-/*  */
-.material-icons.star-icon {
-	color: #ffc300;
-	font-size: 22px;
-	cursor: pointer;
+.jq-star, .jq-star svg {
+  width:20px;
+  height:20px;
 }
+
