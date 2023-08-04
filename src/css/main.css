@@ -127,7 +127,7 @@
 .rating-block > input:checked + label:hover, /* hover current star when changing rating */
 .rating-block > input:checked ~ label:hover,
 .rating-block > label:hover ~ input:checked ~ label, /* lighten current selection */
-.rating-block > input:checked ~ label:hover ~ label { color: #f58e19;  }
+.rating-block > input:checked ~ label:hover ~ label { color: #6B66FF;  }
 
 input, label {
   cursor: pointer;
