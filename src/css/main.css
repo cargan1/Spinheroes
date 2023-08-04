@@ -115,19 +115,19 @@
 }
 
 .rating-block > label { 
-  color: #ddd; 
+  color: #FFED85; 
  float: right; 
 }
 
 
 .rating-block > input:checked ~ label, /* show gold star when clicked */
 .rating-block:not(:checked) > label:hover, /* hover current star */
-.rating-block:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+.rating-block:not(:checked) > label:hover ~ label { color: #ffbb00;  } /* hover previous stars in list */
 
 .rating-block > input:checked + label:hover, /* hover current star when changing rating */
 .rating-block > input:checked ~ label:hover,
 .rating-block > label:hover ~ input:checked ~ label, /* lighten current selection */
-.rating-block > input:checked ~ label:hover ~ label { color: #FFED85;  }
+.rating-block > input:checked ~ label:hover ~ label { color: #f58e19;  }
 
 input, label {
   cursor: pointer;
