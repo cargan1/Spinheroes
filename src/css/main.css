@@ -90,3 +90,78 @@
   height:20px;
 }
 
+
+
+
+
+
+.rating-block { 
+  border: none;
+  float: left;
+}
+
+.rating-block > input { display: none; } 
+.rating-block > label:before { 
+  margin: 2px;
+  font-size: 20px;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating-block > .half:before { 
+  content: "\f089";
+  position: absolute;
+}
+
+.rating-block > label { 
+  color: #ddd; 
+ float: right; 
+}
+
+
+.rating-block > input:checked ~ label, /* show gold star when clicked */
+.rating-block:not(:checked) > label:hover, /* hover current star */
+.rating-block:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating-block > input:checked + label:hover, /* hover current star when changing rating */
+.rating-block > input:checked ~ label:hover,
+.rating-block > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating-block > input:checked ~ label:hover ~ label { color: #FFED85;  }
+
+input, label {
+  cursor: pointer;
+}
+
+input[type="submit"] {
+  margin-top: 5px;
+  background-color: #302d2b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 30px;
+}
+
+input[type="submit"]:focus {
+  outline: 0;
+}
+
+input[type="submit"]:active {
+  transform: scale(0.98);
+}
+
+input[type="submit"]:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.fa-heart {
+  color: red;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.fa-heart:before {
+  content: "\f004";
+  font-family: FontAwesome;
+}
