@@ -103,5 +103,10 @@ $(document).ready(function () {
           .find(".voteAmount")
           .text(newVote);
       });
+    $(this)
+      .children()
+      .click(function () {
+        $(this).prevAll().prop("checked", false);
+      });
   });
 });
