@@ -77,7 +77,6 @@ $(document).ready(function () {
     inputElements = [...inputElements].reverse();
     for (let index = 0; index < ratingVal; index++) {
       inputElements[index].checked = true;
-      console.log(inputElements[index]);
     }
 
     $(this)
