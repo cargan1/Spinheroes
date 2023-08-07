@@ -57,6 +57,7 @@ function randomIntFromInterval(min, max) {
   // min and max included
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
+
 $(document).ready(function () {
   $(".rating-block").each(function () {
     let elid = "el-" + Math.random().toString(16).slice(2);
@@ -70,6 +71,14 @@ $(document).ready(function () {
         .text()
     );
     let newVote = (numberCorrect += 1);
+
+    let ratingVal = $(this).data("rating") * 2;
+    let inputElements = this.getElementsByTagName("input");
+    inputElements = [...inputElements].reverse();
+    for (let index = 0; index < ratingVal; index++) {
+      inputElements[index].checked = true;
+      console.log(inputElements[index]);
+    }
 
     $(this)
       .children()
